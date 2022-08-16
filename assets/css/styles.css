@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+body{
+    background-color: hsl(212, 45%, 89%);
+}
+
+p{
+    font-size: 15px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.container{
+    margin: auto;
+    padding: 50px;
+}
+
+.card{
+    background-color: white;
+    border: 1px solid hsl(212, 45%, 89%);
+    border-radius: 15px;
+    width: 400px;
+    height: 575px;
+    margin: auto;
+}
+
+.qrCodeCard{
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.qrCodeCard > img {
+    width: 350px;
+    height: 350px;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+.cardContent{
+    margin: auto;
+    text-align: center;
+    width: 250px;
+}
+
+.cardContent > p:nth-child(1){
+    font-weight: 700;
+    font-size: 22px;
+    color: hsl(218, 44%, 22%);
+}
+
+.cardContent > p:nth-child(2){
+    font-weight: 400;
+    color: hsl(220, 15%, 55%);
+}
+
+@media only screen and (max-width:426px){
+    .container{
+        padding: 0;
+        margin-top: 80px;
+    }
+
+    .card{
+        width: 350px;
+    }
+
+    .qrCodeCard{
+        width: 320px;
+        height: 320px;
+        margin-top: 15px;
+    }
+
+    .qrCodeCard >img{
+        width: 320px;
+        height: 320px;
+    }
+}
+
+@media only screen and (max-width:376px){
+    .container{
+        margin-top: 100px;
+    }
+
+    .card{
+        width: 300px;
+        height: 515px;
+    }
+
+    .qrCodeCard{
+        width: 270px;
+        height: 290px;
+    }
+
+    .qrCodeCard >img{
+        width: 270px;
+        height: 290px;
+    }
+}
+
+@media only screen and (max-width:326px){
+    .container{
+        margin-top: 140px;
+    }
+
+    .card{
+        width: 250px;
+        height: 455px;
+    }
+
+    .qrCodeCard{
+        width: 220px;
+        height: 260px;
+    }
+
+    .qrCodeCard >img{
+        width: 220px;
+        height: 260px;
+    }
+
+    .cardContent{
+        width: 200px;
+    }
+
+    .cardContent > p:nth-child(1){
+        font-size: 17px;
+    }
+}
